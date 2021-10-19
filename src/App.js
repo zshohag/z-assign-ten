@@ -11,6 +11,8 @@ import About from './Pages/About/About';
 import Service from './Pages/Home/Service/Service';
 import AuthProvider, { AuthContext } from './contexts/AuthProvider';
 import Department from './Pages/Department/Department';
+import Footer from './Pages/Home/Footer/Footer';
+import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 
 
 
@@ -47,6 +49,10 @@ function App() {
 {/*          <PrivateRoute exact path='/detail/:serviceId' >
             <Detail></Detail>
          </PrivateRoute> */}
+
+         <PrivateRoute exact path='/detail/:serviceId' >
+         <Detail></Detail>
+         </PrivateRoute>
          <Route exact path='/detail/:serviceId' >
             <Detail></Detail>
          </Route>
@@ -54,8 +60,8 @@ function App() {
          <Route exact path='*' >
             <NotFound></NotFound>
          </Route>
-      
        </Switch>
+         <Footer></Footer>
      </Router> 
      </AuthProvider>
       

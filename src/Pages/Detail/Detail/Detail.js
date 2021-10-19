@@ -29,13 +29,9 @@ const Detail = () => {
     return (
         <div>
          
-
              <h1 className='mt-4' >{single?.name}</h1>
          
-                
-                  
-
-             <Row xs={1} md={1} className=" g-4 p-5 ">
+             <Row xs={1} md={1} className=" g-4 p-5 m-4 ">
              <Card className ='bg-light'>
                 <Card.Img variant="top"  src={single?.image}  />
                 <Card.Body>
