@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "name": "Neurology",
+      "description": "Neurology is the branch of medicine concerned with the study and treatment of disorders of the nervous system. The nervous system is a complex, sophisticated system that regulates and coordinates body activities.",
+      "image": "https://i.ibb.co/DW4Pg4k/Human-brain-digital-illustration-Electrical-activity-flashes-and-lightning-on-a-blue-background.jpg",
+      "price": ""
+    },
+    {
+      "id": 2,
+      "name": "Surgery",
+      "description": "Surgery is a medical or dental specialty that uses operative manual and instrumental techniques on a person to investigate or treat a pathological condition such as a disease or injury,to help improve bodily function.",
+      "image": "https://i.ibb.co/0ccf7Tr/pexels-anna-shvets-3844581-3.jpg",
+      "price": ""
+    },
+    {
+      "id": 3,
+      "name": "Dental",
+      "description": "Dentists diagnose and treat problems with patients' teeth, gums, and related parts of the mouth. They provide advice and instruction on taking care of the teeth and gums and on diet choices that affect oral health.",
+      "image": "https://i.ibb.co/hFGfhtb/pexels-daniel-frank-305568.jpg",
+      "price": ""
+    },
+    {
+      "id": 4,
+      "name": "Opthalmology",
+      "description": "Ophthalmologists diagnose and treat injuries, infections, diseases, and disorders of the eye. Treatments can include medication taken orally (by mouth) or topically (in the eye).",
+      "image": "https://i.ibb.co/wMqHB6j/pexels-ksenia-chernaya-5765827.jpg",
+      "price": ""
+    },
+    {
+      "id": 5,
+      "name": "Cardiology",
+      "description": "Cardiology is the study and treatment of disorders of the heart and the blood vessels. A person with heart disease or cardiovascular disease may be referred to a cardiologist.",
+      "image": "https://i.ibb.co/c3Hk2tG/pexels-thirdman-7659573.jpg",
+      "price": ""
+    },
+    {
+      "id": 6,
+      "name": "Traumatology",
+      "description": "Traumatology: The branch of surgery that deals with injured patients, usually on an emergency basis. Patients who have suffered significant physical trauma, as from a car accident.",
+      "image": "https://i.ibb.co/44htTSB/pexels-ivan-samkov-4989186-1.jpg",
+      "price": ""
+    }
+  ]
