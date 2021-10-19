@@ -15,7 +15,6 @@ const Home = () => {
             <Services></Services>
             <ExtraOne></ExtraOne>
             <ExtraTwo></ExtraTwo>
-            <Footer></Footer>
            
          
             

@@ -46,17 +46,12 @@ function App() {
          <Route exact path='/login' >
             <Login></Login>
          </Route>
-{/*          <PrivateRoute exact path='/detail/:serviceId' >
-            <Detail></Detail>
-         </PrivateRoute> */}
-
          <PrivateRoute exact path='/detail/:serviceId' >
          <Detail></Detail>
          </PrivateRoute>
          <Route exact path='/detail/:serviceId' >
             <Detail></Detail>
          </Route>
-
          <Route exact path='*' >
             <NotFound></NotFound>
          </Route>
