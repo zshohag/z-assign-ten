@@ -38,6 +38,15 @@ const Login = () => {
         setError('Password  Must be  at least 6 characters long')
         return 
       }
+
+      if ( error ){
+         setError('Wrong Password  or Email  !  Try Again later ')
+         return
+      }
+      else {
+          setError('We are sorry ! Incorrect email or password ')
+          return
+      }
       
          isLogin? processLogin(email,password) : registerNewUser(email,password) 
 
@@ -73,6 +82,7 @@ const Login = () => {
             createUserWithEmailAndPassword( auth,email,password)
             .then(result => {
               const user = result.user
+              console.log(user)
               setError('')
               verifyEmail()
               setUserName()
@@ -89,31 +99,31 @@ const Login = () => {
             })
           }
             return (
-                <div  className='mt-5 m-5 ' >
+                <div >
 
-                <div className='m-5 px-5 '>
+                <div className='m-5 p-5 '>
 
 
                 <form onSubmit={handleRegistration} >
-                <h3 className='text-primary' >Please {isLogin ? 'Login' : "Register" } </h3>
+                <h3 style={{ color :'cadetblue'}} >Please {isLogin ? 'Login' : "Register" } </h3>
 
                 { !isLogin &&  <div className="row mb-3">
                 <label htmlFor="inputName"  className="col-sm-2 col-form-label">Name </label>
-                <div className="col-sm-10">
+                <div className="col-sm-8">
                 <input type="text"  onBlur={handleNameChange} className="form-control" id="inputName"  placeholder="Your Name"/>
                 </div>
                 </div>}
 
-                <div className="row mb-3">
+                <div className="row mb-3 ">
                 <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Email</label>
-                <div className="col-sm-10">
+                <div className="col-sm-8">
                 <input onBlur={handleEmailChange} required type="email" className="form-control" id="inputEmail3"/>
                 </div>
             </div>
 
-            <div className="row mb-3">
+            <div className="row mb-3 ">
             <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Password</label>
-            <div className="col-sm-10">
+            <div className="col-sm-8">
             <input  type="password" onBlur={handlePasswordChange}  required className="form-control" id="inputPassword3"/>
             </div>
             </div>
@@ -129,15 +139,22 @@ const Login = () => {
                 </div>
             </div>
 
-            <div className="row mb-3 text-danger "><h3> {error} </h3> </div>
-            <button type="submit" className="btn btn-primary btn-sm ">{ isLogin ? 'Login' : 'Register'}</button>
-            <button type="button" onClick={handleResetPassword} className=" ms-5 btn btn-secondary btn-sm ">Reset Password </button>
+            <div className="row mb-3 text-danger "><h3> {error}  </h3> </div>
+            <Button type="submit" className="btn-info btn-sm me-5 ">{ isLogin ? 'Login' : 'Register'}</Button>
+        
+
+            <Button type="button" onClick={handleResetPassword} className="btn-secondary btn-sm ms-5 ">Reset Password </Button>
+   
             </form>
             </div>
-                    
-                <br />
-               <Button onClick={signInUsingGoogle} variant="dark">Google SignIn</Button>
+         
+
+            <div>
+            <Button onClick={signInUsingGoogle} variant="dark">Google SignIn</Button>
+            </div>
+
         </div>
+       
     );
 };
 
