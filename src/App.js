@@ -11,8 +11,9 @@ import About from './Pages/About/About';
 import Service from './Pages/Home/Service/Service';
 import AuthProvider, { AuthContext } from './contexts/AuthProvider';
 import Department from './Pages/Department/Department';
-import Footer from './Pages/Home/Footer/Footer';
+
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
+import Footer from './Pages/Footer/Footer';
 
 
 
@@ -52,7 +53,7 @@ function App() {
          <Route exact path='/detail/:serviceId' >
             <Detail></Detail>
          </Route>
-         <Route exact path='*' >
+         <Route exact path='*'>
             <NotFound></NotFound>
          </Route>
        </Switch>
