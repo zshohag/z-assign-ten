@@ -100,7 +100,7 @@ const Login = () => {
             createUserWithEmailAndPassword( auth,email,password)
             .then(result => {
               const user = result.user
-              console.log(user)
+   
               setError('')
               verifyEmail()
               setUserName()
@@ -143,7 +143,7 @@ const Login = () => {
         </div>}
 
         <div className="row mb-3 ">
-        <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Email</label>
+        <label htmlFor="inputEmail3" className="col-sm-2 col-form-label"> Email</label>
         <div className="col-sm-8">
         <input onBlur={handleEmailChange} required type="email" className="form-control" id="inputEmail3"/>
         </div>
@@ -174,7 +174,7 @@ const Login = () => {
         </form>
         </div>
         <hr />
-        <Button onClick={handleGoogleLogin}  className="mt-2" variant="dark">Google SignIn</Button>
+        <Button onClick={handleGoogleLogin}  className="mt-2" variant="dark"> <i class="fab fa-google"></i> Google SignIn</Button>
 
 
     </div>

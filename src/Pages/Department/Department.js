@@ -24,6 +24,7 @@ const Department = () => {
             <Row xs={1} md={4} className=" g-4 m-5 ">
 
     <Col className='p-3  ' >
+        
         <Card className ='bg-light'>
             <Card.Img variant="top" src="https://image.freepik.com/free-vector/human-brain-anatomy-function-area-mind-system-infographic-composition-with-text-legend-keys-colorful-areas_1284-54435.jpg"  />
             <Card.Body>

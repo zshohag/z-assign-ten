@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Col, ListGroup, Nav, Row } from 'react-bootstrap';
 import { HashLink } from 'react-router-hash-link';
+import './Footer.css'
 
 
 const Footer = () => {
@@ -17,9 +18,6 @@ const Footer = () => {
           style={{backgroundColor:"#1c2331"}}
     
           >
-  
-  
-  
     <section className="pt-1 mt-4 ">
       <div className="container text-center text-md-start mt-5">
       
@@ -48,16 +46,16 @@ const Footer = () => {
                 style={{width:'60px',backgroundColor:"#7c4dff",height:"2px"}}
                 />
             <p>
-              <a href="/home" className="text-white">Home</a>
+              <a href="/home" className="text-white"><i class="fas fa-bars"></i> Home</a>
             </p>
             <p>
-              <a href="/doctors" className="text-white">Best Doctors</a>
+              <a href="/doctors" className="text-white"><i class="fas fa-user-md"></i> Best Doctors</a>
             </p>
             <p>
-              <a href="/department" className="text-white">Our Department</a>
+              <a href="/department" className="text-white"><i class="fas fa-user-shield"></i> Our Department</a>
             </p>
             <p>
-              <a href="/about" className="text-white">Why ? One Care </a>
+              <a href="/about" className="text-white"><i class="fas fa-question"></i> Why One Care </a>
             </p>
           </div>
          
@@ -73,10 +71,10 @@ const Footer = () => {
                 />
             <p>
               
-              <a href="/Login" className="text-white">Your Account</a>
+              <a href="/Login" className="text-white">Your Account <i class="far fa-user-circle"></i></a>
             </p>
             <p>
-              <a href="/login" className="text-white">Need Help ?</a>
+              <a href="/login" className="text-white"> Need Help <i class="fas fa-question"></i></a>
             </p>
           </div>
          
