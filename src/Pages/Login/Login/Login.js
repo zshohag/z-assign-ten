@@ -51,43 +51,45 @@ const Login = () => {
         setPassword(e.target.value)
       }
 
-
-
+      
+      
       const handleRegistration = e => {
       e.preventDefault();
 
       if(password.length < 6){
         setError('Password  Must be  at least 6 characters long')
         return 
-      } 
+      }
       else if(error?.includes("auth/user-not-found")){
         setError(' You are not  Registered ')
+       
         return
         }
       else if(error?.includes("auth/invalid-email")){
         setError('The email  that you have entered is incorrect ')
+        
         return
         }
       else if(error?.includes("auth/wrong-password")){
         setError('The  password that you have entered is incorrect ')
+       
         return
         }
       else if(error?.includes("auth/user-not-found")){
         setError(' User not found ')
+        
         return
-        }
-
-        else {
-          setError(' The email or password that you have entered is incorrect . Try Again Later ')
-          return
-        }
-     
+      }
       
-         isLogin? processLogin(email,password) : registerNewUser(email,password) 
+      else {
+        setError(' The email or password that you have entered is incorrect . Try Again Later ')
+       
+      }
+      
+      isLogin? processLogin(email,password) : registerNewUser(email,password) 
+     
 
       }
-
-
 
           const processLogin = (email,password) => {
   
