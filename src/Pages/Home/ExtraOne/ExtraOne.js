@@ -1,11 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Accordion} from 'react-bootstrap';
+import { useSpring, animated } from 'react-spring'
 
 const ExtraOne = () => {
+
+    
+     // Animation 
+     const [flip, set] = useState(false)
+     const props = useSpring({
+       to: { opacity: 1 },
+       from: { opacity: 0 },
+       reset: true,
+       reverse: flip,
+       
+       delay: 1000,
+       onRest: () => set(!flip),
+     })
+
     return (
-        <div>
+        <div >
               <div>  
-            <h1  className='text-dark m-5 '  >WHY CHOOSE US? </h1>
+            <animated.h2 style={props} className='text-dark m-5 '  >WHY  <span style={{backgroundColor:"cadetblue"}} className=" text-white p-1 rounded " > CHOOSE</span>   US? </animated.h2>
               <div className='row m-5  ' >
                   <div className='col-md-6 border p-3 bg-light ' >
                     <h3 className='mb-5  ' >

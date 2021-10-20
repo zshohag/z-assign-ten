@@ -42,22 +42,22 @@ const Footer = () => {
         
           <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
       
-            <h6 className="text-uppercase fw-bold">Products</h6>
+            <h6 className="text-uppercase fw-bold">Menu</h6>
             <hr
                 className="mb-4 mt-0 d-inline-block mx-auto"
                 style={{width:'60px',backgroundColor:"#7c4dff",height:"2px"}}
                 />
             <p>
-              <a href="#!" className="text-white">MDBootstrap</a>
+              <a href="/home" className="text-white">Home</a>
             </p>
             <p>
-              <a href="#!" className="text-white">MDWordPress</a>
+              <a href="/doctors" className="text-white">Best Doctors</a>
             </p>
             <p>
-              <a href="#!" className="text-white">BrandFlow</a>
+              <a href="/department" className="text-white">Our Department</a>
             </p>
             <p>
-              <a href="#!" className="text-white">Bootstrap Angular</a>
+              <a href="/about" className="text-white">Why ? One Care </a>
             </p>
           </div>
          

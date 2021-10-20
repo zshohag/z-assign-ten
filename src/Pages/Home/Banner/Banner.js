@@ -66,7 +66,7 @@ healthcare service provider to consistently </p>
       alt="First slide"
     />
     <Carousel.Caption>
-      <h3> <span style={{backgroundColor:'cadetblue'}} className="p-1 rounded-2"  >Healthcare anytime, anywhere</span> </h3>
+      <h3> <span style={{backgroundColor:'cadetblue'}} className="p-1 rounded-2"  >Healthcare 24 Hours </span> </h3>
       <p></p>
     </Carousel.Caption>
   </Carousel.Item>
@@ -78,20 +78,19 @@ healthcare service provider to consistently </p>
     />
 
     <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h3><span style={{backgroundColor:'cadetblue'}} className="p-1 rounded-2" >World Best Laboratory</span> </h3>
+    
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="https://i.ibb.co/V2nTc79/pexels-mart-production-7088530-1.jpg"
+      src="https://i.ibb.co/cXmx8rf/pexels-pixabay-263194.jpg"
       alt="Third slide"
     />
 
     <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <h3> <span style={{backgroundColor:'cadetblue'}} className="p-1 rounded-2" > Best Medical Equipment </span>  </h3>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>

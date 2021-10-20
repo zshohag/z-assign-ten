@@ -1,11 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, Col, Row  } from 'react-bootstrap';
+import { useSpring, animated } from 'react-spring'
 import './Department.css'
 
 
 const Department = () => {
+
+         // Animation 
+         const [flip, set] = useState(false)
+         const props = useSpring({
+           to: { opacity: 1 },
+           from: { opacity: 0 },
+           reset: true,
+           reverse: flip,
+           
+           delay: 1000,
+           onRest: () => set(!flip),
+         })
     return (
         <div>
+
+            <animated.h3 style={props} className="mt-5" >Our Medical <span className="bg-dark text-white p-1 rounded " > Department </span>  With The Best Services</animated.h3>
             <Row xs={1} md={4} className=" g-4 m-5 ">
 
     <Col className='p-3  ' >
