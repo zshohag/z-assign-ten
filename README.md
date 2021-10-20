@@ -1,6 +1,6 @@
 # Our website name : One Care
 
-One Care is a best medical website.
+One Care is a best medical .
 
 ## Site Link : [https://one-care-z.web.app]()
 
