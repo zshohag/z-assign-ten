@@ -60,6 +60,23 @@ const Login = () => {
         setError('Password  Must be  at least 6 characters long')
         return 
       } 
+      else if(error?.includes("auth/user-not-found")){
+        setError(' You are not  Registered ')
+        }
+      else if(error?.includes("auth/invalid-email")){
+        setError('  The email  that you have entered is incorrect ')
+        }
+      else if(error?.includes("auth/wrong-password")){
+        setError('The  password that you have entered is incorrect ')
+        }
+      else if(error?.includes("auth/user-not-found")){
+        setError(' User not found ')
+        }
+
+        else {
+          setError('Try Again Later')
+        }
+     
       
          isLogin? processLogin(email,password) : registerNewUser(email,password) 
 
