@@ -1,7 +1,6 @@
 import React from 'react';
-import { Card, Col, ListGroup, Nav, Row } from 'react-bootstrap';
-import { HashLink } from 'react-router-hash-link';
 import './Footer.css'
+
 
 
 const Footer = () => {
@@ -14,7 +13,7 @@ const Footer = () => {
 
  
   <footer
-          className="text-center text-lg-start text-white"
+          className="text-center text-lg-start text-white "
           style={{backgroundColor:"#1c2331"}}
     
           >
