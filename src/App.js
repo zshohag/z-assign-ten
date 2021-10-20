@@ -9,7 +9,7 @@ import Header from './Pages/Shared/Header/Header';
 import Doctors from './Pages/Doctors/Doctors';
 import About from './Pages/About/About';
 import Service from './Pages/Home/Service/Service';
-import AuthProvider, { AuthContext } from './contexts/AuthProvider';
+import AuthProvider  from './contexts/AuthProvider';
 import Department from './Pages/Department/Department';
 
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';

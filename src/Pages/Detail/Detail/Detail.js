@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Card ,Button, Row} from 'react-bootstrap';
+import { Button} from 'react-bootstrap';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 
@@ -27,25 +27,24 @@ const Detail = () => {
       },[detail])
 
     return (
-        <div>
-         
-             <h1 className='mt-4' >{single?.name}</h1>
-         
-             <Row xs={1} md={1} className=" g-4 p-5 m-4 ">
-             <Card className ='bg-light'>
-                <Card.Img variant="top"  src={single?.image}  />
-                <Card.Body>
-                <Card.Title></Card.Title>
-                    <Card.Text>
-                        {single?.description}
-                    </Card.Text>
-                <Link to="/home" >
-                <Button className='text-white' variant="dark"> Go Back   </Button>
-                </Link> 
-                </Card.Body>
-            </Card>
-     
-            </Row>
+        <div classNameName='m-5 p-5' >
+            <h3> </h3>
+            <div className="card m-4 p-4 " >
+            <div className="row g-0">
+                <div className="col-md-6">
+                <img src={single?.image} className="img-fluid rounded-start" alt="..."/>
+                </div>
+                <div className="col-md-6">
+                <div className="card-body">
+                    <h5 className="card-title">{single?.name}</h5>
+                    <p className="card-text">{single?.description}</p>
+                    <Link to="/home" >
+                      <Button classNameName='text-white' variant="dark"> Go Back</Button>
+                  </Link> 
+                </div>
+                </div>
+            </div>
+            </div>
 
           
            

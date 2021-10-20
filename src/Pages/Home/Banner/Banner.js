@@ -3,9 +3,9 @@ import {  Carousel, Col, Row } from 'react-bootstrap';
 
 const Banner = () => {
     return (
-        <div className="m-3 " >
+        <div className=" mb-5 " >
           
-
+{/* 
 <Row xs={1} md={1} className="" >
 
     <Col>
@@ -53,7 +53,66 @@ healthcare service provider to consistently </p>
 
     </Col>
 
-</Row>
+    </Row>
+
+ */}
+
+
+<Carousel>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="https://i.ibb.co/jhCHWgB/bgn-slider-03.jpg" 
+      alt="First slide"
+    />
+    <Carousel.Caption>
+      <h3> <span style={{backgroundColor:'cadetblue'}} className="p-1 rounded-2"  >Healthcare anytime, anywhere</span> </h3>
+      <p></p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="https://i.ibb.co/V2nTc79/pexels-mart-production-7088530-1.jpg"
+      alt="Second slide"
+    />
+
+    <Carousel.Caption>
+      <h3>Second slide label</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="https://i.ibb.co/V2nTc79/pexels-mart-production-7088530-1.jpg"
+      alt="Third slide"
+    />
+
+    <Carousel.Caption>
+      <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+</Carousel>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         </div>
     );
